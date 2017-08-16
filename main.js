@@ -9,6 +9,7 @@
              } 
        } 
  }
+ //mohammad naseer
 function makeMovie(name,rating,year,info,duration,imgLink){
 	return {
 		name : name,
