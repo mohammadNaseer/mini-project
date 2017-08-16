@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type=""></script>
+<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+<script type="text/javascript" src="main.js"></script>
+	<title>Search Movies</title>
+</head>
+<body>
+<div id='title'><h1 id='header'>Search Top Movies</h1></div>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<br>
+<iframe  width="1340" height="400" src="https://cdn.theguardian.tv/mainwebsite/2017/06/22/GOTtrailer2_desk.mp4" frameborder="0" allowfullscreen> </iframe>
+<p id="videop">Nine noble families fight for control over the mythical lands of Westeros, while a forgotten race returns after being dormant for thousands of years.</p>
+<br>
+<b>Search Movies</b> : <button id='button1'>Search</button>
+<input id ="in" type="text" name="Search Movies" placeholder="Search by Genre">
+
+
+
+<script type="text/javascript">
+$('#button1').click(function(){
+ 	if($('input#in').val() === "action"){
+ 		window.location="2ndpage.html"
+	}
+	else if($('input#in').val() === "comedy"){
+		window.location="comedy.html"
+	}
+	else{
+		alert('No data found')
+	}
+})
+</script>
+</body>
+</html>

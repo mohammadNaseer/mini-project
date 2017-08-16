@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+<script type="text/javascript" src="main.js"></script>
+	<title>Top 10 Comedy movies</title>
+</head>
+<body>
+<div id='title'><h1 id='header'>Search Top Movies</h1></div>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h1>Here's your top 10 Comedy movies..Enjoy!</h1>
+<div id="listofmovies1"></div>
+<script type="text/javascript">
+  		 var list = $('#listofmovies1').append();
+  		 for(var i =0 ; i < comedy.length; i++){
+  		 list.append("<table width='400' height='400'><tr><td rowspan='2'><img height='300px'src="+comedy[i].imgLink+"></td><td colspan='2'><h3>"+(i+1)+"."+comedy[i].name+"</h3><br><i>Year :"+comedy[i].year+"  Rating :"+comedy[i].rating+"/10</i><br><br>"+comedy[i].info+"<span>("+comedy[i].duration+"mins)</span></td></tr></table>")
+  		 }
+</script>
+<button id="button3" onclick="window.location.href ='main.html'">home page</button>
+
+</body>
+</html>
